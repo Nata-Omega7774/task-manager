@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 📋 Task Manager - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Простое одностраничное приложение (SPA) для управления задачами, созданное в рамках тестового задания.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-In the project directory, you can run:
+## 🚀 Функциональность
 
-### `npm start`
+✅ Добавление задач - форма с названием и описанием  
+✅ Изменение статуса - циклическое переключение: Ожидание → В работе → Выполнено  
+✅ Удаление задач - кнопка удаления для каждой задачи  
+✅ Фильтрация - фильтр по статусам: Все, Ожидание, В работе, Выполнено  
+✅ Сохранение данных - автоматическое сохранение в localStorage  
+✅ Статистика - отображение количества задач по статусам  
+✅ Адаптивный дизайн - работает на экранах от 320px до 1440px+  
+✅ Анимации - плавное появление/удаление задач  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖼️ Скриншоты
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Главный экран
+![Главный экран](https://via.placeholder.com/800x450/3b82f6/ffffff?text=Task+Manager+Interface)
 
-### `npm test`
+### Добавление задачи
+![Добавление задачи](https://via.placeholder.com/400x300/10b981/ffffff?text=Add+Task+Form)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Фильтрация задач
+![Фильтрация](https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Task+Filters)
 
-### `npm run build`
+## 🛠️ Технологии
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 18 - фронтенд-библиотека
+- TailwindCSS 3 - утилитарный CSS-фреймворк
+- React Hooks - useState, useEffect
+- LocalStorage - клиентское хранение данных
+- JavaScript (ES6+) - современный JS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Установка и запуск
+# Клонировать репозиторий
+git clone https://github.com/Nata-Omega7774/task-manager.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Перейти в папку проекта
+cd task-manager
 
-### `npm run eject`
+# Установить зависимости
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Запустить приложение
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Приложение откроется по адресу: [http://localhost:3000](http://localhost:3000)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Структура проекта
+task-manager/
+├── src/
+│   ├── components/
+│   │   ├── TaskForm.jsx    # Форма добавления задачи
+│   │   ├── TaskItem.jsx    # Отдельная задача
+│   │   ├── TaskList.jsx    # Список задач
+│   │   └── FilterButtons.jsx # Кнопки фильтрации
+│   ├── App.js             # Главный компонент
+│   └── index.js           # Точка входа
+├── public/
+├── package.json
+└── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ✅ Выполненные требования тестового задания
 
-## Learn More
+1. Список задач - отображение всех задач с title, description, status
+2. Добавление новой задачи - форма с полями title и description
+3. Изменение статуса - переключение между pending/in_progress/done
+4. Удаление задачи - кнопка удаления для каждой задачи
+5. Стилизация - TailwindCSS, ручная верстка без UI-библиотек
+6. Хранение данных - localStorage
+7. Адаптивность - от 320px до 1440px
+8. Бонусы: фильтрация, анимации, сохранение в localStorage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👩‍💻 Автор
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Наталья  
+- GitHub: [Nata-Omega7774](https://github.com/Nata-Omega7774)
 
-### Code Splitting
+## 📄 Лицензия
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
